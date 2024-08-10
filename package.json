@@ -24,7 +24,8 @@
         "docs": "rimraf -rf docs && typedoc --options typedoc.json",
         "build": "npm run clean && tsc && webpack",
         "lint": "eslint src",
-        "pack": "npm run build && npm pack --pack-destination packs"
+        "pack": "npm run build && npm pack --pack-destination packs",
+	"install": "npm run build"
     },
     "homepage": "https://thephar.github.io/archipelago.js/",
     "repository": "https://github.com/ThePhar/archipelago.js.git",
@@ -41,14 +42,12 @@
     "dependencies": {
         "ts-loader": "^9.4.4",
         "uuid": "^9.0.0",
-        "webpack": "^5.88.1",
-        "ws": "^8.13.0"
+        "webpack": "^5.88.1"
     },
     "devDependencies": {
         "@trivago/prettier-plugin-sort-imports": "^4.1.1",
         "@types/node": "^18.15.11",
         "@types/uuid": "^9.0.1",
-        "@types/ws": "^8.5.4",
         "@typescript-eslint/eslint-plugin": "^5.57.1",
         "@typescript-eslint/parser": "^5.57.1",
         "eslint": "^8.37.0",

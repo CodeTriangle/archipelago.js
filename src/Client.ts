@@ -1,5 +1,4 @@
 import { EventEmitter } from "events";
-import WebSocket, { MessageEvent } from "ws";
 import { v4 as generateUUIDv4 } from "uuid";
 
 import { ClientStatus } from "./consts/ClientStatus";
