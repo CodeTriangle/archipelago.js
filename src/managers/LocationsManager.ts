@@ -1,6 +1,6 @@
 import { Client } from "../Client";
 import { CLIENT_PACKET_TYPE, SERVER_PACKET_TYPE } from "../consts/CommandPacketType";
-import { CREATE_AS_HINT_MODE } from "../consts/CreateAsHintMode";
+import { CreateAsHintMode } from "../consts/CreateAsHintMode";
 import { ConnectedPacket } from "../packets/ConnectedPacket";
 import { RoomUpdatePacket } from "../packets/RoomUpdatePacket";
 
@@ -57,7 +57,7 @@ export class LocationsManager {
      * @param hint Create a hint for these locations.
      * @param locationIds A list of location ids.
      */
-    public scout(hint = CREATE_AS_HINT_MODE.NO_HINT, ...locationIds: number[]): void {
+    public scout(hint: CreateAsHintMode, ...locationIds: number[]): void {
         this.#client.send({
             cmd: CLIENT_PACKET_TYPE.LOCATION_SCOUTS,
             locations: locationIds,

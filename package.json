@@ -39,7 +39,6 @@
         "websocket"
     ],
     "dependencies": {
-        "isomorphic-ws": "^5.0.0",
         "ts-loader": "^9.4.4",
         "uuid": "^9.0.0",
         "webpack": "^5.88.1",
